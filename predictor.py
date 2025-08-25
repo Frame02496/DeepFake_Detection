@@ -67,7 +67,7 @@ if os.path.exists(path):
                 print(f'{GREEN}Highly certain that the image is real\n {RESET}')
             
         elif path.lower().endswith(('.mp4', '.avi', '.mov', '.mkv')):
-            model_video = load_model('saved_models/meso4_vid.h5')
+            model_video = load_model('meso4_vid.h5')
             video_generator = prepare_video_data(path, batch_size=1)
             X, y = video_generator[0]
             pred = model_video.predict(X)[0][0]
@@ -97,7 +97,7 @@ if os.path.exists(path):
         if len(os.listdir(path)) != 0:
             # Loading models
             model_img = load_model('saved_models/meso4.h5')
-            model_video = load_model('saved_models/meso4_vid.h5')
+            model_video = load_model('meso4_vid.h5')
             dataGenerator = ImageDataGenerator(rescale=1./255)
             image_paths = [os.path.join(path, fname) for fname in os.listdir(path) if fname.lower().endswith(('.png', '.jpg', '.jpeg'))]
             image_names = []
@@ -116,7 +116,7 @@ if os.path.exists(path):
             
             # Predicting for images
             if len(image_names) != 0:
-                img_limit = int(args.limit) if args.limit < args.ilimit else int(args.ilimit)
+                img_limit = args.limit if args.limit < args.ilimit else args.ilimit
                 if img_limit != float('inf') and img_limit < len(image_names):
                     print(f'\nPredicting for {img_limit} images:')
                 else:
@@ -150,7 +150,7 @@ if os.path.exists(path):
             # Predicting for videos
             if len(video_names) != 0:
                 video_generator = prepare_video_data(path, batch_size=1)
-                vid_limit = int(args.limit) if args.limit < args.vlimit else int(args.vlimit)
+                vid_limit = args.limit if args.limit < args.vlimit else args.vlimit
                 if vid_limit != float('inf') and vid_limit < len(video_names):
                     print(f'\nPredicting for {vid_limit} videos:')
                 else:
