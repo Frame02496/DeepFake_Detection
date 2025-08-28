@@ -47,7 +47,7 @@ OR
 ``` bash
 python predictor.py /users/username/image_and_video_dir
 ```
-[predictor.py](https://github.com/Frame02496/DeepFake_Detection/blob/main/predictor.py) will return a value between between 0 and 1 for each file.
+[predictor.py](https://github.com/Frame02496/DeepFake_Detection/blob/main/predictor.py) will return a value between 0 and 1 for each file.
 How close a value is to 0 or 1 indicates how certain the models are about an image/video being real or fake.
 The closer a value is to 0, the more certain the model is that the image/video is fake and vice versa.
 If a value is close to 0.5, it indicates that the model is not entirely sure whether the corresponding image/video is real or fake.
