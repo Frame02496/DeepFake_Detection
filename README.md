@@ -52,7 +52,7 @@ How close a value is to 0 or 1 indicates how ceratin the models are about an ima
 The closer a value is to 0, the more ceratin the model is that the image/video is fake and vice versa.
 If a value is close to 0.5, it indicates that the model is not entirely sure whether the corresponding image/video is real or fake.
 
-4. Additionally, if a directory contains too many images, or videos and you want to limit the number of files that [predictor.py](https://github.com/Frame02496/DeepFake_Detection/blob/main/predictor.py) should scan, you can use its options --limit, --ilimit, or --vlimt.
+4. Additionally, if a directory contains too many images, or videos and you want to limit the number of files that [predictor.py](https://github.com/Frame02496/DeepFake_Detection/blob/main/predictor.py) should scan, you can use its options --limit, --ilimit, or --vlimit.
 * --limit limits [predictor.py](https://github.com/Frame02496/DeepFake_Detection/blob/main/predictor.py) from scanning more then the sprecified number of images and videos.
   Example:
   ``` python
@@ -70,6 +70,6 @@ If a value is close to 0.5, it indicates that the model is not entirely sure whe
 * --vlimit limits [predictor.py](https://github.com/Frame02496/DeepFake_Detection/blob/main/predictor.py) from scanning more then the sprecified number of images only.
   Example:
   ``` python
-  python predictor.py --ilimit 20 /users/username/image_and_video_dir
+  python predictor.py --vlimit 20 /users/username/image_and_video_dir
   ```
   When this command is executed only 20 images will be scanned from the given directory.
