@@ -87,10 +87,6 @@ class Classifier:
     
     def get_accuracy(self, x, y):
         return self.model.test_on_batch(x, y)
-    
-    '''def load(self, path):
-        if os.path.exists(path):
-            self.model.load_weights(path)'''
             
     def save(self, path):
         self.model.save(path)
@@ -208,12 +204,7 @@ def train_image_model(data_dir, epochs=10, batch_size=32):
     # Create model
     meso = UnifiedMeso4(mode='image', learning_rate=0.001)
     print(type(meso))
-    
-    # Load pretrained weights
-    '''if weights_path and os.path.exists(weights_path):
-        print(f"Loading pretrained weights from {weights_path}")
-        meso.load(weights_path)'''
-    
+
     # Prepare data generators
     train_datagen = tf.keras.preprocessing.image.ImageDataGenerator(
         rescale=1./255,
