@@ -48,26 +48,26 @@ OR
 python predictor.py /users/username/image_and_video_dir
 ```
 [predictor.py](https://github.com/Frame02496/DeepFake_Detection/blob/main/predictor.py) will return a value between between 0 and 1 for each file.
-How close a value is to 0 or 1 indicates how ceratin the models are about an image/video being real or fake.
-The closer a value is to 0, the more ceratin the model is that the image/video is fake and vice versa.
+How close a value is to 0 or 1 indicates how certain the models are about an image/video being real or fake.
+The closer a value is to 0, the more certain the model is that the image/video is fake and vice versa.
 If a value is close to 0.5, it indicates that the model is not entirely sure whether the corresponding image/video is real or fake.
 
 4. Additionally, if a directory contains too many images, or videos and you want to limit the number of files that [predictor.py](https://github.com/Frame02496/DeepFake_Detection/blob/main/predictor.py) should scan, you can use its options --limit, --ilimit, or --vlimit.
-* --limit limits [predictor.py](https://github.com/Frame02496/DeepFake_Detection/blob/main/predictor.py) from scanning more then the sprecified number of images and videos.
+* --limit limits [predictor.py](https://github.com/Frame02496/DeepFake_Detection/blob/main/predictor.py) from scanning more than the specified number of images and videos.
   Example:
   ``` python
   python predictor.py --limit 20 /users/username/image_and_video_dir
   ```
   When this command is executed only 20 images, and 20 videos will be scanned from the given directory.
 
-* --ilimit limits [predictor.py](https://github.com/Frame02496/DeepFake_Detection/blob/main/predictor.py) from scanning more then the sprecified number of images only.
+* --ilimit limits [predictor.py](https://github.com/Frame02496/DeepFake_Detection/blob/main/predictor.py) from scanning more than the specified number of images only.
   Example:
   ``` python
   python predictor.py --ilimit 20 /users/username/image_and_video_dir
   ```
   This makes it so that [predictor.py](https://github.com/Frame02496/DeepFake_Detection/blob/main/predictor.py) only scan 20 images from the given directory but it does not affect the number of videos that are scanned; All videos that are present in the directory will be scanned.
   
-* --vlimit limits [predictor.py](https://github.com/Frame02496/DeepFake_Detection/blob/main/predictor.py) from scanning more then the sprecified number of images only.
+* --vlimit limits [predictor.py](https://github.com/Frame02496/DeepFake_Detection/blob/main/predictor.py) from scanning more then the specified number of images only.
   Example:
   ``` python
   python predictor.py --vlimit 20 /users/username/image_and_video_dir
