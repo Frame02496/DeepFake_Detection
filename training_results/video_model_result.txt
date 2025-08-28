@@ -1,0 +1,41 @@
+ Epoch 1/10 
+  Training Loss: 0.5726 
+  Validation Loss: 0.5723 
+  Validation Accuracy: 0.7816 
+ Epoch 2/10 
+  Training Loss: 0.5119 
+  Validation Loss: 0.5115 
+  Validation Accuracy: 0.7998
+ Epoch 3/10 
+  Training Loss: 0.4726 
+  Validation Loss: 0.4723 
+  Validation Accuracy: 0.8085 
+Epoch 4/10 
+  Training Loss: 0.4664 
+  Validation Loss: 0.4632 
+  Validation Accuracy: 0.8137 
+Epoch 5/10 
+  Training Loss: 0.4593 
+  Validation Loss: 0.4623 
+  Validation Accuracy: 0.8160 
+Epoch 6/10  
+  Training Loss: 0.4631 
+  Validation Loss: 0.4657 
+  Validation Accuracy: 0.8125 
+Epoch 7/10 
+  Training Loss: 0.4658 
+  Validation Loss: 0.4652 
+  Validation Accuracy: 0.8132 
+Epoch 8/10 
+  Training Loss: 0.4627 
+  Validation Loss: 0.4622 
+  Validation Accuracy: 0.8161 
+Epoch 9/10 
+  Training Loss: 0.4585 
+  Validation Loss: 0.4534 
+  Validation Accuracy: 0.8219 
+Epoch 10/10 
+  Training Loss: 0.4497 
+  Validation Loss: 0.4473 
+  Validation Accuracy: 0.8266 
+Training completed! 
